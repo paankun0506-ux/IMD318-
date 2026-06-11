@@ -1,7 +1,7 @@
 /* Shared header + footer injection so pages stay DRY. */
 (function () {
   const pages = [
-    ['home.html', 'Home'],
+    ['index.html', 'Home'],
     ['about.html', 'About'],
     ['story.html', 'My Story'],
     ['education.html', 'Education'],
@@ -15,7 +15,7 @@
   const navHTML = `
     <nav class="navbar" role="navigation" aria-label="Primary">
       <div class="nav-inner">
-        <a href="home.html" class="brand">◢ MY//PORTFOLIO</a>
+        <a href="index.html" class="brand">◢ MY//PORTFOLIO</a>
         <ul class="nav-links" id="navLinks">
           ${pages.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}
         </ul>
@@ -56,7 +56,7 @@
           <div>
             <h4>Explore</h4>
             <ul>
-              <li><a href="home.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="story.html">My Story</a></li>
               <li><a href="gallery.html">Gallery</a></li>
